@@ -1,0 +1,30 @@
+.container {
+  height: 70vh;
+  padding: 4rem 2rem 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.buttons {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: x-large;
+}
+
+.light_mode .buttons {
+  box-shadow: 7px 4px 10px rgb(156 106 106),
+    inset 7px 4px 10px rgb(164 121 121 / 52%);
+  /* box-shadow: 7px 4px 10px rgb(156 106 106); */
+}
+
+.dark_mode .buttons {
+  box-shadow: 4px 1px 12px rgb(27 66 95);
+  background-color: black;
+  color: white;
+}
+
+.number_button {
+  font-weight: bolder;
+}

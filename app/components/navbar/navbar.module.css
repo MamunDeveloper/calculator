@@ -1,0 +1,20 @@
+.navbar {
+  width: 100%;
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.light_mode {
+  background-color: white;
+  color: black;
+}
+.dark_mode {
+  background-color: black;
+  color: white;
+}
+
+.mode_icon {
+  width: 40px;
+  height: 23px;
+}

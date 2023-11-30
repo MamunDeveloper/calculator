@@ -1,0 +1,45 @@
+.calculator {
+  height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+}
+.main_box {
+  width: 75%;
+  height: 100%;
+}
+.histroy_box {
+  width: 25%;
+  height: 100%;
+  padding: 0.3rem 1rem;
+  overflow-y: scroll;
+}
+
+.light_mode .main_box,
+.light_mode .histroy_box {
+  background-color: white;
+  color: black;
+}
+.dark_mode .main_box,
+.dark_mode .histroy_box {
+  background-color: black;
+  color: white;
+}
+
+.light_mode .main_box {
+  position: relative;
+  box-shadow: 10px 10px 10px rgb(156 106 106);
+}
+.dark_mode .main_box {
+  position: relative;
+  box-shadow: 4px 1px 12px rgb(27 66 95);
+}
+
+@media (max-width: 800px) {
+  .histroy_box {
+    display: none;
+  }
+  .main_box {
+    width: 100%;
+  }
+}
