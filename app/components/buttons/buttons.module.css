@@ -16,7 +16,6 @@
 .light_mode .buttons {
   box-shadow: 7px 4px 10px rgb(156 106 106),
     inset 7px 4px 10px rgb(164 121 121 / 52%);
-  /* box-shadow: 7px 4px 10px rgb(156 106 106); */
 }
 
 .dark_mode .buttons {
@@ -27,4 +26,15 @@
 
 .number_button {
   font-weight: bolder;
+}
+
+@media (max-width: 700px) {
+  .buttons {
+    max-height: 5rem;
+  }
+}
+@media (max-width: 400px) {
+  .buttons {
+    max-height: 4rem;
+  }
 }
